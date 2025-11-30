@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "debug_toolbar",
     "django_extensions",
     'core',  # app
+    'users',  # app
 ]
 
 MIDDLEWARE = [
@@ -114,6 +115,8 @@ USE_I18N = True
 
 USE_TZ = True
 
+# Informa ao Django para usar seu modelo de usuário
+AUTH_USER_MODEL = 'users.User'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
